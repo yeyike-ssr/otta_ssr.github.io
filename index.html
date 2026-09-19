@@ -3,10 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About this website</title>
+    <title>Ott's simple life</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* ---------- 基础 ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Josefin Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 300;
+            color: #4a3f35;
+            letter-spacing: 0.03em;
+            line-height: 1.8;
+
+            /* 大地色系几何背景：三角形拼接图案 */
+            background-color: #e8dcc8;
+            background-image:
+                linear-gradient(45deg, #d4c4a8 25%, transparent 25%),
+                linear-gradient(-45deg, #d4c4a8 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #d4c4a8 75%),
+                linear-gradient(-45deg, transparent 75%, #d4c4a8 75%);
+            background-size: 40px 40px;
+            background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+
+            /* 让内容居中且不被背景干扰 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* ---------- 导航栏 ---------- */
+        nav {
+            width: 100%;
+            background: rgba(232, 220, 200, 0.85);
+            backdrop-filter: blur(6px);
+            padding: 1.2rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            border-bottom: 1px solid rgba(74, 63, 53, 0.15);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a3f35;
+            font-size: 1rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 1;
+        }
+
+        /* ---------- 主内容区 ---------- */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4rem 2rem;
+            background: rgba(245, 240, 230, 0.72);
+            border-radius: 2px;
+            box-shadow: 0 2px 30px rgba(74, 63, 53, 0.08);
+            margin: auto;
+            max-width: 700px;
+        }
+
+        h1 {
+            font-weight: 300;
+            font-size: 2.4rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            color: #3d332a;
+        }
+
+        main p {
+            font-size: 1.05rem;
+            max-width: 500px;
+            color: #5c5247;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome aboard</h1>
-    <p>This is my personal space for words and photos</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="photos.html">Photos</a>
+    </nav>
+
+    <main>
+        <h1>Welcome aboard</h1>
+        <p></p>
+    </main>
+
 </body>
 </html>
